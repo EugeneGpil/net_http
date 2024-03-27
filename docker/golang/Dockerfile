@@ -2,9 +2,9 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ARG ID_USER=1000
-ARG ID_GROUP=1000
-ARG GOLANG_VERSION=1.20.4
+ARG ID_USER
+ARG ID_GROUP
+ARG GOLANG_VERSION
 RUN \
     echo "creating group and user" &&\
     groupadd -g ${ID_GROUP} app &&\
